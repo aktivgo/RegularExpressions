@@ -2,17 +2,16 @@ package Examples;
 
 import java.util.regex.*;
 
-public class Example_2 {
+public class ExampleGFG_1 {
     public static void main(String[] args) {
         // Get the regex to be checked
-        String regex = "\\b(?<GFG>[A-Za-z\\s]+)";
+        String regex = "\\b(?<Geeks>[A-Za-z\\s]+)";
 
         // Create a pattern from regex
-        Pattern pattern
-                = Pattern.compile(regex);
+        Pattern pattern = Pattern.compile(regex);
 
         // Get the String to be matched
-        String stringToBeMatched = "   GFGFGFGFGFGFGFGFGFG";
+        String stringToBeMatched = "GeeksForGeeks";
 
         // Create a matcher for the input String
         Matcher matcher = pattern.matcher(stringToBeMatched);
@@ -23,7 +22,7 @@ public class Example_2 {
 
         while (matcher.find()) {
             // Get the first index of match result
-            System.out.println(matcher.start("GFG"));
+            System.out.println(matcher.start("Geeks"));
         }
     }
 }
