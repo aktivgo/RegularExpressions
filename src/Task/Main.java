@@ -10,7 +10,7 @@ public class Main {
             System.out.print("1. Проверка корректности IP адреса\n2. Проверка корректности GUID идентификатора\n" +
                     "3. Проверка корректности URL адреса\n4. Проверка надёжности пароля\n5. Выход\n\nВыберите пункт: ");
             try {
-                int menu = scan.nextInt();
+                int menu = Integer.parseInt(scan.nextLine());
                 switch (menu) {
                     case 1: {
                         System.out.print("\nВведите IP-адрес: ");
@@ -37,7 +37,7 @@ public class Main {
                         System.out.println("Ошибка выбора пункта меню: введёный пункт не существует\n");
                 }
             } catch (Exception e) {
-                System.out.println("Ошибка: " + e.getMessage());
+                System.out.println("Ошибка: " + e.getMessage() + "\n");
             }
         } while(true);
     }
