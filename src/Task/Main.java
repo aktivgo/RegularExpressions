@@ -38,7 +38,7 @@ public class Main {
                     break;
                     case 4: {
                         System.out.print("\nВведите пароль: ");
-                        System.out.println(IsPattern.Password(new Scanner(System.in).nextLine()) ?
+                        System.out.println(IsPattern.StrongPassword(new Scanner(System.in).nextLine()) ?
                                 "Пароль надёжный\n" : "Пароль ненадёжный\n");
                     }
                     break;
