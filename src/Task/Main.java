@@ -7,8 +7,14 @@ public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         do {
-            System.out.print("1. Проверка корректности IPv4 адреса\n2. Проверка корректности GUID идентификатора\n" +
-                    "3. Проверка корректности URL адреса\n4. Проверка надёжности пароля\n5. Выход\n\nВыберите пункт: ");
+            System.out.print("""
+                    1. Проверка корректности IPv4 адреса
+                    2. Проверка корректности GUID идентификатора
+                    3. Проверка корректности URL адреса
+                    4. Проверка надёжности пароля
+                    5. Выход
+
+                    Выберите пункт:\s""");
             try {
                 int menu = Integer.parseInt(scan.nextLine());
                 switch (menu) {
