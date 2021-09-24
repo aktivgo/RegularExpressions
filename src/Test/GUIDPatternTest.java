@@ -5,61 +5,9 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class IsPatternTest {
-
+public class GUIDPatternTest {
     @Test
-    public void emptyIPv4Test() {
-        assertFalse(IsPattern.IPv4(""));
-    }
-
-    @Test
-    public void letterIPv4() {
-        assertFalse(IsPattern.IPv4("l2l.1.1.1"));
-    }
-
-    @Test
-    public void extraPointBeginIPv4() {
-        assertFalse(IsPattern.IPv4(".1.1.1.1"));
-    }
-
-    @Test
-    public void extraPointEndIPv4() {
-        assertFalse(IsPattern.IPv4("1.1.1.1."));
-    }
-
-    @Test
-    public void moreOctetsIPv4() {
-        assertFalse(IsPattern.IPv4("1.1.1.1.1"));
-    }
-
-    @Test
-    public void lessOctetsIPv4() {
-        assertFalse(IsPattern.IPv4("1.1.1"));
-    }
-
-    @Test
-    public void wrongOctetsIPv4() {
-        assertFalse(IsPattern.IPv4("256.1.1.1"));
-    }
-
-    @Test
-    public void extraNullIPv4() {
-        assertFalse(IsPattern.IPv4("010.1.1.1"));
-    }
-
-    @Test
-    public void minValueIPv4() {
-        assertTrue(IsPattern.IPv4("0.0.0.0"));
-    }
-
-    @Test
-    public void maxValueIPv4() {
-        assertTrue(IsPattern.IPv4("255.255.255.255"));
-    }
-
-
-    @Test
-    public void emptyGUIDTest() {
+    public void emptyGUIDTest(){
         assertFalse(IsPattern.GUID(""));
     }
 
@@ -141,15 +89,5 @@ public class IsPatternTest {
     @Test
     public void moreMinusGUIDTest() {
         assertFalse(IsPattern.GUID("000000000000--0000-0000-00000000000"));
-    }
-
-
-    @Test
-    public void URL() {
-    }
-
-
-    @Test
-    public void strongPassword() {
     }
 }

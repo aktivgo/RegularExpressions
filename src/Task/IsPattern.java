@@ -18,13 +18,13 @@ public class IsPattern {
 
     static public boolean URL(String str){
         String urlPattern =
-                "^(https?:\\/\\/)?([\\w\\.]+)\\.([a-z]{2,6}\\.?)(\\/[\\w\\.]*)*\\/?$";
+                "^(https?://)?(www\\.)?([a-zA-Z][-a-zA-Z0-9]*[a-zA-Z]\\.)+[a-zA-Z]{2,}(/[\\w-.~:?#\\[\\]@!$&'()*+,;%=]+)*/?$";
         return Pattern.matches(urlPattern, str);
     }
 
     static public boolean StrongPassword(String str){
         String passwordPattern =
-                "";
+                "(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])\\w{8,}";
         return Pattern.matches(passwordPattern, str);
     }
 }
