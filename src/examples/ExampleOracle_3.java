@@ -1,6 +1,7 @@
-package Examples;
+package examples;
 
-import java.util.regex.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class ExampleOracle_3 {
     private static String REGEX = "dog";

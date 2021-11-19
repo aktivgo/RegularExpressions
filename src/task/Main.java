@@ -1,4 +1,4 @@
-package Task;
+package task;
 
 import java.util.Scanner;
 
@@ -42,13 +42,14 @@ public class Main {
                                 "Пароль надёжный\n" : "Пароль ненадёжный\n");
                     }
                     break;
-                    case 5: return;
+                    case 5:
+                        return;
                     default:
                         System.out.println("Ошибка выбора пункта меню: введёный пункт не существует\n");
                 }
             } catch (Exception e) {
                 System.out.println("Ошибка: " + e.getMessage() + "\n");
             }
-        } while(true);
+        } while (true);
     }
 }

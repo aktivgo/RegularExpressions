@@ -1,6 +1,7 @@
-package Examples;
+package examples;
 
-import java.util.regex.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class ExampleOracle_1 {
     private static final String REGEX = "\\bdog\\b";
@@ -11,7 +12,7 @@ public class ExampleOracle_1 {
         //  get a matcher object
         Matcher m = p.matcher(INPUT);
         int count = 0;
-        while(m.find()) {
+        while (m.find()) {
             count++;
             System.out.println("Match number " + count);
             System.out.println("start(): " + m.start());

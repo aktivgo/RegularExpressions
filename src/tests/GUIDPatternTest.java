@@ -1,13 +1,14 @@
-package Test;
+package tests;
 
-import Task.IsPattern;
+import task.IsPattern;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class GUIDPatternTest {
     @Test
-    public void emptyGUIDTest(){
+    public void emptyGUIDTest() {
         assertFalse(IsPattern.GUID(""));
     }
 
