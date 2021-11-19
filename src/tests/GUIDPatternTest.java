@@ -1,7 +1,7 @@
 package tests;
 
-import task.IsPattern;
 import org.junit.Test;
+import task.IsPattern;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
