@@ -48,6 +48,11 @@ public class IPv4PatternTest {
     }
 
     @Test
+    public void correct() {
+        assertTrue(IsPattern.IPv4("127.0.0.1"));
+    }
+
+    @Test
     public void minValueIPv4() {
         assertTrue(IsPattern.IPv4("0.0.0.0"));
     }

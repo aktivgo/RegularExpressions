@@ -43,7 +43,17 @@ public class StrongPasswordTest {
     }
 
     @Test
-    public void allRulePasswordTest() {
+    public void correctTest1() {
         assertTrue(IsPattern.StrongPassword("SupperPas1"));
+    }
+
+    @Test
+    public void correctTest2() {
+        assertTrue(IsPattern.StrongPassword("C00l_Pass"));
+    }
+
+    @Test
+    public void correctTest3() {
+        assertTrue(IsPattern.StrongPassword("AaBb123aAbB"));
     }
 }

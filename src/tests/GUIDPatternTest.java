@@ -18,6 +18,11 @@ public class GUIDPatternTest {
     }
 
     @Test
+    public void correctGUIDTest() {
+        assertTrue(IsPattern.GUID("12345678-abcd-ABCD-0000-123456789012"));
+    }
+
+    @Test
     public void minValueGUIDTest() {
         assertTrue(IsPattern.GUID("00000000-0000-0000-0000-000000000000"));
     }
